@@ -32,7 +32,8 @@ data instead: an `app-data` request is the only way to ask for it.
 
 - Ask only when the task in front of you needs the data, and name only the sources it needs. Never ask from a routine or background worker: the user has to be there to answer.
 - Ask for each source at most once per task. If the user left one unticked, do not ask for it again in that task.
-- **Shell history often holds passwords and keys**, and folder names in **recent code projects** can reveal clients or private work. Ask for either only when the task is about the user's shell or coding work, and say so in the reason.
+- **Shell history often holds passwords and keys.** Ask for it only when the task is about the user's shell or coding work, and say so in the reason.
+- Folder names in **recent code projects** can reveal clients or private work. You may ask for it for any task that needs it, but only then, and say in the reason what you will use it for.
 - Before asking, check whether you already hold the grants: they appear as `minds-file-server-read-<device ID>:<path>` rules (and `minds-installed-apps-read` for installed apps) in
 
 ```bash
